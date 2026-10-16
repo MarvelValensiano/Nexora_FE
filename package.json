@@ -1,12 +1,19 @@
 {
-  "name": "nexalora-fe-bootstrap",
+  "name": "nexalora-fe",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "test:auth": "node --experimental-strip-types --test tests/auth-validation.test.mjs",
+    "test:onboarding": "node --experimental-strip-types --test tests/onboarding.test.mjs tests/onboarding-storage.test.mjs",
+    "test:workspace": "node --experimental-strip-types --test tests/workspace.test.mjs",
+    "test:exploration": "node --experimental-strip-types --test tests/exploration.test.mjs"
   },
   "dependencies": {
     "next": "16.4.2",
@@ -20,6 +27,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.2",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
