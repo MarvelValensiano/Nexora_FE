@@ -1,5 +1,7 @@
 # Nexalora Frontend
 
+Repository: [Nexora_FE](https://github.com/MarvelValensiano/Nexora_FE).
+
 Frontend Nexalora dibangun dengan Next.js App Router, TypeScript, dan Tailwind CSS.
 
 ## Prasyarat
